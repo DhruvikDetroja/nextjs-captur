@@ -27,7 +27,7 @@ const Slider = ({slides}) => {
         <div className='flex relative justify-center p-4 '>
             {SliderData.map((slide,index)=>{
                 return (
-                    <div className={index === current ? 'opacity-[1] ease-in duration-1000' : 'opacity-0'}>
+                    <div key={'hello'} className={index === current ? 'opacity-[1] ease-in duration-1000' : 'opacity-0'}>
                         
                         <FaArrowCircleLeft onClick={prevSlide} size={50} className='absolute top-[50%] left-[50px] text-white/70 cursor-pointer select-none z-[2]'/>
                         {index===current && 
